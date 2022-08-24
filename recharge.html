@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+        function myfun2(){
+            window.location.href="plan.html"
+        }
+    </script>
+    <style>
+        .aboutsponser h1,
+.aboutsponser p {
+    width: 100%;
+    display: block;
+    color: #2465B4;
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 10px;
+    letter-spacing: 0.2em;
+    text-align: left;
+    opacity: 0.8;
+}
+.aboutsponser p{
+    font-size: 0.85em;
+    text-justify: distribute-all-lines;
+    line-height: 2.5;
+    margin: 20px 0px 0px 15px;
+}
+      * {
+        box-sizing: border-box;
+      }
+      .topnav {
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      .active {
+        background-color: #04aa6d;
+        color: white;
+      }
+
+      .topnav .icon {
+        display: none;
+      }
+
+      .dropdown {
+        float: left;
+        overflow: hidden;
+      }
+
+      .dropdown .dropbtn {
+        font-size: 17px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+      }
+      .squaresponser1 {
+    height: 150px;
+    width: 180px;
+    border-radius: 25px;
+    background-image: url('titlesponser.png');
+    display:inline-block;
+  }
+  .squaresponser2 {
+    height: 150px;
+    width: 180px;
+    border-radius: 25px;
+    background-image: url('ott.png');
+    display:inline-block;
+  }
+  .squaresponser3 {
+    height: 150px;
+    width: 180px;
+    border-radius: 25px;
+    background-image: url('hotsstar.png');
+    display:inline-block;
+  }
+  .squaresponser4 {
+    height: 150px;
+    width: 500px;
+    border-radius: 25px;
+    background-image: url('officalpartners.png');
+    display:inline-block;
+  }
+  .squaresponser5 {
+    height: 150px;
+    width: 180px;
+    border-radius: 25px;
+    background-image: url('ott.png');
+    display:inline-block;
+  }
+  .squaresponser6 {
+    height: 150px;
+    width: 180px;
+    border-radius: 25px;
+    background-image: url('hotsstar.png');
+    display:inline-block;
+  }
+      .button {
+        background-color: #4caf50; /* Green */
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+      }
+      .button2 {
+        background-color: white;
+
+        color: black;
+        border: 2px solid #008cba;
+      }
+
+      .button2:hover {
+        background-color: #008cba;
+        color: white;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+
+      .topnav a:hover,
+      .dropdown:hover .dropbtn {
+        background-color: #555;
+        color: white;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .header {
+        overflow: hidden;
+        background-color: #f1f1f1;
+        padding: 20px 10px;
+      }
+
+      .header a {
+        float: left;
+        color: black;
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 25px;
+        border-radius: 4px;
+      }
+
+      .header a.logo {
+        font-size: 25px;
+        font-weight: bold;
+      }
+
+      .header a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      .header a.active {
+        background-color: dodgerblue;
+        color: white;
+      }
+
+      .header-right {
+        float: right;
+      }
+
+      @media screen and (max-width: 500px) {
+        .header a {
+          float: none;
+          display: block;
+          text-align: left;
+        }
+
+        .header-right {
+          float: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a href="#home" class="active">Home</a>
+      <a href="#news">Plans</a>
+      <a href="#contact">Contact</a>
+      <div class="dropdown">
+        <button class="dropbtn">
+          Recharge
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Recharge for Jio</a>
+          <a href="#">Recharge for Airtel</a>
+          <a href="#">Recharge for Vodafone</a>
+        </div>
+      </div>
+      <a href="#about">About</a>
+      <a
+        href="javascript:void(0);"
+        style="font-size: 15px"
+        class="icon"
+        onclick="myFunction()"
+        >&#9776;</a
+      >
+    </div>
+    <section class="home" id="home">
+      <div class="swiper-container home-slider">
+        <div class="swiper-wrapper wrapper">
+          <div class="swiper-slide slide">
+            <center>
+            <div class="content">
+              <span>Home > Mobiles > Phones</span>
+              <h3>Mobile Phone providers</h3>
+              <p>
+                See the best mobile phone providers in the UK including BT, Sky, Virgin Mobile, EE, Three and many more.
+              </p>
+
+            </div>
+        </center>
+           
+          </div>
+
+          
+
+          
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section class="dishes" id="dishes">
+      <h3 class="sub-heading">Store</h3>
+      <h1 class="heading">Popular Items</h1>
+
+      <div class="box-container">
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="sky.png" alt="" />
+          <h3>Sky Mobile offers both pay-monthly handset and SIM only deals. Sky's SIMs are on the expensive side if you’re not a Sky TV/broadband customer, but if you are there are bargains to be had.</h3>
+    
+          <br />
+          <button
+            class="button button1"
+            onclick="myfun1('Vegitables',100,demoInput)"
+          >
+            SKY PLAN
+          </button>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="bt.png" alt="" />
+          <h3>BT Mobile offers both both pay-monthly phones and SIM only deals, and you’ll get money off if you’re already a BT broadband customer. BT Mobile also offers good discounts for taking out multiple SIMs.</h3>
+        
+<br />
+          <button
+            class="button button1"
+            onclick="myfun2('Fruits',200,demoInput1)"
+          >
+            BT PLAN
+          </button>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="vmedia.png" alt="" />
+          <h3>Virgin Mobile offers a wide range of pay-monthly deals with handsets from all the top manufacturers. You’ll also find SIM only deals, as well as discounts for Virgin broadband and TV customers.</h3>
+      
+          <button
+            class="button button1"
+            onclick="myfun3('Meats',200,demoInput2)"
+          ><br/>
+            VIRGIN PLAN
+          </button>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="voda.png" alt="" />
+          <h3>Vodafone provides its own network, offering phones and tablets from premium manufacturers such as Apple, Google and Samsung, as well as mid-range phones, budget phones, and SIM only deals.</h3>
+        
+      
+          <button
+          class="button button1"
+          onclick="myfun6('Snacks',250,demoInput5)"
+        >
+          VODAFONE PLAN
+        </button>
+          
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="o2.png" alt="" />
+          <h3>O2 provides one of the UK’s four mobile networks, and the only one that doesn’t offer home broadband. Nevertheless, with O2 you will find an excellent range of handsets, tablets and SIM only deals.</h3>
+        
+
+          <button
+          class="button button1"
+          onclick="myfun6('Snacks',250,demoInput5)"
+        >
+        O2 PLAN
+        </button>
+          
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="3.png" alt="" />
+          <h3>Three is one of the UK’s four network providers. It offers a huge range of handsets along with a dizzying array of SIM only options (including unlimited data) to suit all possible tastes and needs.</h3>
+      
+
+
+          <button
+            class="button button1"
+            onclick="myfun6('Snacks',250,demoInput5)"
+          >
+          3 PLAN
+          </button>
+        </div>
+      </div>
+    </section>
+
+    
+      <section class="dishes" id="dishes">
+        <h3 class="sub-heading">Recharge</h3>
+        <h1 class="heading">Popular Providers</h1>
+  
+        <div class="box-container">
+          <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+            <img src="images/vegi.png" alt="" />
+            <h3>Idea</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span>Starts from Rs.299</span>
+            <br />
+            <button
+              class="button button1"
+              onclick="myfun2()"
+            >
+              Recharge
+            </button>
+          </div>
+  
+          <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+            <img src="images/fruits.png" alt="" />
+            <h3>Jio</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span>Starts from Rs.399</span><br />
+            <button
+              class="button button1"
+              onclick="myfun2()"
+            >
+              Recharge
+            </button>
+          </div>
+  
+          <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+            <img src="images/meat.png" alt="" />
+            <h3>Vodafone</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span>Starts from Rs.599</span><br />
+            <button
+              class="button button1"
+              onclick="myfun2()"
+            >
+              Recharge
+            </button>
+          </div>
+          </div>
+          </section>
+          <section class="aboutsponser">
+            <center>
+            <h1>SPONSERS</h1>
+            &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+    
+    
+    
+      
+      
+            <div class="squaresponser1"></div>
+            <br /><br /><br />
+            <div class="squaresponser2"></div>
+            &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+            <div class="squaresponser4"></div>
+            &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+            <div class="squaresponser6"></div>
+        </center>
+            <!-- <div class="square2"></div>
+            &nbsp; &nbsp;
+            <div class="square3"></div>
+            &nbsp; &nbsp;
+            <div class="square4"></div>
+            &nbsp; &nbsp;
+            <div class="square5"></div>
+            &nbsp; &nbsp; -->
+          </section>
+  </body>
+</html>
