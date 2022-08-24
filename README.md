@@ -14,15 +14,16 @@
     
     
  # Acheived:
-   HTML
-   Javascript
-   Css
+  Concepts of:
+     HTML
+     Javascript
+     Css
    
 # Pending:
-  SCSS
-  Loading Logic in recharge
-  simple validation only acheived in login and recharge module
-  Session not maintained
+     1.SCSS
+     2.Loading Logic in recharge
+     3.simple validation only acheived in login and recharge module
+     4.Session not maintained
  
       
  
