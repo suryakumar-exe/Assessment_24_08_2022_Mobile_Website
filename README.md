@@ -6,11 +6,11 @@
         Email : suryakumar2808@gmail.com
         Password : Surya$321
         
- 2. recharge.html is the page to view all the sections
+ 2. recharge.html is the page to view all the sections 
     eg.. Home,popular plans,sponser,recharge
     
- 3. plan.html is the page to recharge for number
-    Enter number and recharge 
+ 3. plan.html is the page to recharge for number 
+    ie.. Enter number and recharge 
     
     
  # Acheived:
@@ -18,7 +18,7 @@
    Javascript
    Css
    
-# Pending
+# Pending:
   SCSS
   Loading Logic in recharge
   simple validation only acheived in login and recharge module
